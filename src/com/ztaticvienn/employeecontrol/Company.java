@@ -7,7 +7,8 @@
 package com.ztaticvienn.employeecontrol;
 
 import java.util.Calendar;
-
+import java.util.GregorianCalendar;
+import java.util.Iterator;
 import java.util.HashSet;
 
 /**
@@ -16,16 +17,31 @@ import java.util.HashSet;
  */
 public class Company {
     
-    
-    HashSet employeelist = new HashSet();
+
+         
+    HashSet employeeList = new HashSet();
+        
     
     public boolean addFixedSalaryEmployee(Integer id, String name,
-            String surname, Calendar birthdate, Gender gender, Double salary){
+            String surname, Integer year, Integer month, Integer day, Gender gender, Double salary){
+        //Проверка на отсутствие работника с таким же ID
+        Iterator itr = employeeList.iterator();
+        while(itr.hasNext()){
+            Employee emp =(Employee)itr.next(); 
+            if (emp.getId() == id){
+                
+                return false;
+                
+            }
+        }
+        
+        Calendar birthDate = new GregorianCalendar();  
+        birthDate.set(year, month, day);
         
         FixedSalaryEmployee fse = new FixedSalaryEmployee(id,name,
-                surname,birthdate,gender,salary);
+                surname,birthDate,gender,salary);
         
-        employeelist.add(fse);
+        employeeList.add(fse);
         
         
         
@@ -34,21 +50,56 @@ public class Company {
     }
     
     public boolean addHourlyWageEmployee(Integer id, String name,
-            String surname, Calendar birthdate, Gender gender, Double hourlywage){
+            String surname, Integer year, Integer month, Integer day, Gender gender, Double hourlywage){
+        //Проверка на отсутствие работника с таким же ID
+        Iterator itr = employeeList.iterator();
+        while(itr.hasNext()){
+            Employee emp =(Employee)itr.next(); 
+            if (emp.getId() == id){
+                
+                return false;
+                
+            }
+        }
+        Calendar birthDate = new GregorianCalendar();
+        birthDate.set(year, month, day);
         
-        FixedSalaryEmployee hwe = new FixedSalaryEmployee(id,name,
-                surname,birthdate,gender,hourlywage);
+        HourlyWageEmployee hwe = new HourlyWageEmployee(id,name,
+                surname,birthDate,gender,hourlywage);
         
-        employeelist.add(hwe);
+        employeeList.add(hwe);
         
         
         
             
         return true;
     }
-        
+    
+    //Methods To do:
+    
     public void ShowAllEmployees(){
+        Iterator itr = employeeList.iterator();   
+        while(itr.hasNext()){
+            Employee emp= (Employee)itr.next();
+            System.out.println(emp+ "");
+        }
+    }
+    
+    public boolean deleteEmployee(){
+        
         //TODO
+        return true;
+    }
+    
+    public void ShowEmployees(){
+        
+    }
+    
+    public void ShowAllEmployeesBy(){
+        
+    }
+    
+    public void ShowEmployeesBy(){
         
     }
 }

@@ -14,7 +14,11 @@ public abstract class Employee {
     private Gender gender;
     private SalaryType salaryType;
  
-        
+    @Override
+    public String toString(){
+        return ""+id+" "+surname+" "+name+" "+birthdate.getTime()+" "+gender+" "
+                +salaryType;
+    }    
     public Integer getId(){
         return id;
     }
@@ -40,7 +44,6 @@ public abstract class Employee {
     }
     
     public Calendar getBirthDate(){
-        System.out.println(birthdate);
         return birthdate;
     }
     

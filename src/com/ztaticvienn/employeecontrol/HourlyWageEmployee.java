@@ -24,10 +24,11 @@ public final class HourlyWageEmployee extends Employee{
             this.hourlywage = dbl;
         }
     
-    public HourlyWageEmployee(Integer id, String name, Calendar birthdate, Gender gender,Double hourlywage){
+    public HourlyWageEmployee(Integer id, String name, String surname, Calendar birthdate, Gender gender,Double hourlywage){
         
         this.setId(id);
         this.setName(name);
+        this.setSurname(surname);
         this.setBirthDate(birthdate);
         this.setGender(gender);
         this.setHourlyWage(hourlywage);
