@@ -23,6 +23,12 @@ public final class HourlyWageEmployee extends Employee{
         public void setHourlyWage(Double dbl){
             this.hourlywage = dbl;
         }
+        
+            @Override
+         public String toString(){
+            return ""+getId()+" "+getSurname()+" "+getName()+" "+getBirthDate()+" "+getGender()+" "
+                +" "+getSalaryType()+" average salary="+20.8*8*hourlywage;
+        }
     
     public HourlyWageEmployee(Integer id, String name, String surname, Calendar birthdate, Gender gender,Double hourlywage){
         
@@ -35,4 +41,6 @@ public final class HourlyWageEmployee extends Employee{
         this.setSalaryType(SalaryType.HOURLYWAGE);
         
     }
+
+    
 }

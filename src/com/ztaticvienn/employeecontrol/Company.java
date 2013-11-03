@@ -10,6 +10,8 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.HashSet;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  *
@@ -19,7 +21,7 @@ public class Company {
     
 
          
-    HashSet employeeList = new HashSet();
+    TreeSet employeeList = new TreeSet();
         
     
     public boolean addFixedSalaryEmployee(Integer id, String name,
@@ -81,7 +83,14 @@ public class Company {
         Iterator itr = employeeList.iterator();   
         while(itr.hasNext()){
             Employee emp= (Employee)itr.next();
-            System.out.println(emp+ "");
+            if (emp.getSalaryType()==SalaryType.FIXEDSALARY){
+                FixedSalaryEmployee fse = (FixedSalaryEmployee)emp;
+                System.out.println(fse+ "");
+            }
+            else{
+            HourlyWageEmployee hwe = (HourlyWageEmployee)emp;
+            System.out.println(hwe+ "");
+            }
         }
     }
     

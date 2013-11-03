@@ -2,8 +2,9 @@
 package com.ztaticvienn.employeecontrol;
 
 import java.util.Calendar;
+import java.util.Date;
 
-public abstract class Employee {
+public abstract class Employee implements Comparable{
     
     //TODO Calculate age
     
@@ -14,11 +15,7 @@ public abstract class Employee {
     private Gender gender;
     private SalaryType salaryType;
  
-    @Override
-    public String toString(){
-        return ""+id+" "+surname+" "+name+" "+birthdate.getTime()+" "+gender+" "
-                +salaryType;
-    }    
+    
     public Integer getId(){
         return id;
     }
@@ -43,8 +40,8 @@ public abstract class Employee {
         this.surname=str;
     }
     
-    public Calendar getBirthDate(){
-        return birthdate;
+    public Date getBirthDate(){
+        return birthdate.getTime();
     }
     
     public void setBirthDate(Calendar date){
@@ -67,6 +64,26 @@ public abstract class Employee {
         this.salaryType = slt;
     }
                
-
+    @Override
+    public int compareTo(Object obj) {
+        Employee tmp = (Employee)obj;
+    if(this.getId() < tmp.getId())
+    {
+        System.out.println("< "+tmp.getId());
+      /* текущее меньше полученного */
+      return -1;
+    }   
+    else if(this.getId() > tmp.getId())
+    {
+    System.out.println("> "+tmp.getId());  
+      /* текущее больше полученного */
+      return 1;
+    }
+    
+    System.out.println("0 "+tmp.getId());
+    /* текущее равно полученному */
+    return 0;
+        
+    }
     
 }
