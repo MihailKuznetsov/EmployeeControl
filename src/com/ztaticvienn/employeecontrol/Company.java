@@ -76,9 +76,7 @@ public class Company {
             
         return true;
     }
-    
-    //Methods To do:
-    
+
     public void ShowAllEmployees(){
         Iterator itr = employeeList.iterator();   
         while(itr.hasNext()){
@@ -94,16 +92,37 @@ public class Company {
         }
     }
     
-    public boolean deleteEmployee(){
+    public boolean deleteEmployee(Integer id){
+        Iterator itr = employeeList.iterator();   
+        while(itr.hasNext()){
+           Employee emp= (Employee)itr.next();
+           if (emp.getId()==id){
+               itr.remove();
+               return true;
+           }
+        }
         
-        //TODO
-        return true;
+        return false;
     }
     
-    public void ShowEmployees(){
-        
+    public void ShowEmployees(int from, int to){
+    Iterator itr = employeeList.iterator();   
+        while(itr.hasNext()){
+            Employee emp= (Employee)itr.next();
+            if ((emp.getId()>=from)&&(emp.getId()<=to)){
+                if (emp.getSalaryType()==SalaryType.FIXEDSALARY){
+                    FixedSalaryEmployee fse = (FixedSalaryEmployee)emp;
+                    System.out.println(fse+ "");
+                }
+                else{
+                    HourlyWageEmployee hwe = (HourlyWageEmployee)emp;
+                    System.out.println(hwe+ "");
+                }
+
+            }
+        }    
     }
-    
+    //Methods To do:
     public void ShowAllEmployeesBy(){
         
     }

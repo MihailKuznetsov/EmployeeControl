@@ -10,6 +10,4 @@ package com.ztaticvienn.employeecontrol;
  *
  * @author Michail
  */
-public enum Gender { MALE, FEMALE
-    
-}
+public enum Gender { MALE, FEMALE }

@@ -10,6 +10,4 @@ package com.ztaticvienn.employeecontrol;
  *
  * @author Michail
  */
-public enum SalaryType {
-    FIXEDSALARY, HOURLYWAGE    
-}
+public enum SalaryType {  FIXEDSALARY, HOURLYWAGE   }
