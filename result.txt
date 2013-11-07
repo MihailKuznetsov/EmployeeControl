@@ -1,0 +1,5 @@
+1 Smith John Tue Apr 02 20:33:55 EEST 1985 MALE  FIXEDSALARY average salary=1500.0
+2 Watson James Sun Aug 23 20:33:55 EEST 1987 MALE  FIXEDSALARY average salary=2000.0
+3 Lewis Will Sun Apr 18 20:33:55 EEST 1976 MALE  HOURLYWAGE average salary=665.6
+4 Johnson Jane Tue May 11 20:33:55 EEST 1976 FEMALE  HOURLYWAGE average salary=1996.8000000000002
+5 McCarter George Sun Apr 15 20:33:55 EEST 1984 MALE  FIXEDSALARY average salary=2300.0

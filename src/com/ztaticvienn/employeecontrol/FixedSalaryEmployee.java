@@ -27,7 +27,7 @@ public final class FixedSalaryEmployee extends Employee{
         @Override
     public String toString(){
         return ""+getId()+" "+getSurname()+" "+getName()+" "+getBirthDate()+" "+getGender()+" "
-                +" "+getSalaryType()+" average salary="+salary;
+                +" "+getSalaryType()+" "+getAverageSalary();
     }
     
     public FixedSalaryEmployee(Integer id, String name, String surname, Calendar birthdate, Gender gender, Double salary){
@@ -44,5 +44,9 @@ public final class FixedSalaryEmployee extends Employee{
         
     }
 
-    
+
+    @Override
+    public Double getAverageSalary() {
+        return salary;
+    }
 }

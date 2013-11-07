@@ -11,11 +11,12 @@ public abstract class Employee implements Comparable{
     private Integer id;
     private String surname;
     private String name;
-    private Calendar birthdate;
+    private Calendar birthDate;
     private Gender gender;
     private SalaryType salaryType;
- 
-    
+
+    public abstract Double getAverageSalary();
+
     public Integer getId(){
         return id;
     }
@@ -41,11 +42,11 @@ public abstract class Employee implements Comparable{
     }
     
     public Date getBirthDate(){
-        return birthdate.getTime();
+        return birthDate.getTime();
     }
     
     public void setBirthDate(Calendar date){
-        this.birthdate = date;
+        this.birthDate = date;
     }
     
     public Gender getGender(){
@@ -63,7 +64,9 @@ public abstract class Employee implements Comparable{
     public void setSalaryType(SalaryType slt){
         this.salaryType = slt;
     }
-               
+
+
+
     @Override
     public int compareTo(Object obj) {
         Employee tmp = (Employee)obj;

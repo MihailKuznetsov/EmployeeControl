@@ -27,7 +27,7 @@ public final class HourlyWageEmployee extends Employee{
             @Override
          public String toString(){
             return ""+getId()+" "+getSurname()+" "+getName()+" "+getBirthDate()+" "+getGender()+" "
-                +" "+getSalaryType()+" average salary="+20.8*8*hourlywage;
+                +" "+getSalaryType()+" "+getAverageSalary();
         }
     
     public HourlyWageEmployee(Integer id, String name, String surname, Calendar birthdate, Gender gender,Double hourlywage){
@@ -42,5 +42,9 @@ public final class HourlyWageEmployee extends Employee{
         
     }
 
-    
+
+    @Override
+    public Double getAverageSalary() {
+        return 20.8*8*hourlywage;
+    }
 }
