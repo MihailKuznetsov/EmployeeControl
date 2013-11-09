@@ -2,26 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee21172a-cd5d-41e9-a9be-03b1036ff183" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/CompareDate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/CompareGender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/CompareId.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/CompareName.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/CompareSalary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/CompareSurname.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/EmployeeGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Company.java" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Company.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Employee.java" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Employee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/FixedSalaryEmployee.java" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/FixedSalaryEmployee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/HourlyWageEmployee.java" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/HourlyWageEmployee.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/MainClass.java" afterPath="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/MainClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EmployeeControl.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383852174125" ignored="false" />
-    <file path="/MainClass.java" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383852543078" ignored="false" />
-    <file path="/Company.java" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383854681093" ignored="false" />
+    <file path="/Dummy.txt" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383977214359" ignored="false" />
+    <file path="/MainClass.java" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383943665812" ignored="false" />
+    <file path="/Company.java" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383941010140" ignored="false" />
     <file path="/DateComparator.java" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383847369125" ignored="false" />
     <file path="/Employee.java" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383854721078" ignored="false" />
     <file path="/CompareId.java" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383851171984" ignored="false" />
@@ -31,6 +21,7 @@
     <file path="/FixedSalaryEmployee.java" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383851787062" ignored="false" />
     <file path="/HourlyWageEmployee.java" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383851777921" ignored="false" />
     <file path="/CompareSalary.java" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383854021281" ignored="false" />
+    <file path="/EmployeeGenerator.java" changelist="ee21172a-cd5d-41e9-a9be-03b1036ff183" time="1383978249796" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +36,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -81,7 +73,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -95,28 +86,15 @@
         <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="43" column="31" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Company.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Company.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Company.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="53" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.44636014">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SalaryType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/SalaryType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="12" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+            <state line="79" column="41" selection-start="2086" selection-end="2102" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,7 +103,16 @@
       <file leaf-file-name="MainClass.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="35" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0">
+            <state line="25" column="34" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeGenerator.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/EmployeeGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="81" selection-start="359" selection-end="359" vertical-scroll-proportion="0.40078586">
               <folding />
             </state>
           </provider>
@@ -135,9 +122,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/CompareSalary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="20" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -216,9 +201,10 @@
         <option value="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/FixedSalaryEmployee.java" />
         <option value="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/HourlyWageEmployee.java" />
         <option value="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/CompareSalary.java" />
-        <option value="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/MainClass.java" />
-        <option value="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Company.java" />
         <option value="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Employee.java" />
+        <option value="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Company.java" />
+        <option value="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/EmployeeGenerator.java" />
       </list>
     </option>
   </component>
@@ -239,7 +225,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -254,8 +240,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,6 +278,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -471,7 +457,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="1002" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -481,12 +467,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32549942" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2439222" sideWeight="0.6702002" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2439222" sideWeight="0.6702002" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32979977" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -560,13 +546,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/FixedSalaryEmployee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0">
@@ -591,13 +570,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/CompareGender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="73" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/HourlyWageEmployee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="41" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -640,9 +612,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/CompareSalary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -653,28 +623,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/MainClass.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0">
+        <state line="43" column="31" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Employee.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/HourlyWageEmployee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="31" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="29" column="41" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="34" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/Company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="53" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.44636014">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="79" column="41" selection-start="2086" selection-end="2102" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ztaticvienn/employeecontrol/EmployeeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="81" selection-start="359" selection-end="359" vertical-scroll-proportion="0.40078586">
+          <folding />
         </state>
       </provider>
     </entry>

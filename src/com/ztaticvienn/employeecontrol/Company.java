@@ -48,6 +48,10 @@ public class Company {
         }
         
         Calendar birthDate = new GregorianCalendar();
+        birthDate.set(Calendar.HOUR_OF_DAY, 0);
+        birthDate.set(Calendar.MINUTE, 0);
+        birthDate.set(Calendar.SECOND, 0);
+        birthDate.set(Calendar.MILLISECOND, 0);
         birthDate.set(year, month, day);
         
         FixedSalaryEmployee fse = new FixedSalaryEmployee(id,name,
@@ -86,6 +90,10 @@ public class Company {
             }
         }
         Calendar birthDate = new GregorianCalendar();
+        birthDate.set(Calendar.HOUR_OF_DAY, 0);
+        birthDate.set(Calendar.MINUTE, 0);
+        birthDate.set(Calendar.SECOND, 0);
+        birthDate.set(Calendar.MILLISECOND, 0);
         birthDate.set(year, month, day);
         
         HourlyWageEmployee hwe = new HourlyWageEmployee(id,name,
