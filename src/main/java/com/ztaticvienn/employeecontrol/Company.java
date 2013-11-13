@@ -20,7 +20,7 @@ public class Company {
     
 
          
-    ArrayList employeeList = new ArrayList();
+    private ArrayList employeeList = new ArrayList();
 
     /**
      * Method is used to create FixedSalaryEmployee instance with custom parameters and put in into Company ArrayList.
@@ -34,9 +34,14 @@ public class Company {
      * @param salary
      * @return
      */
+    public Iterator getIterator(){
+        return employeeList.iterator();
+    }
     public boolean addFixedSalaryEmployee(Integer id, String name,
-            String surname, Integer year, Integer month, Integer day, Gender gender, Double salary){
+            String surname, Integer year, Integer month, Integer day, Gender gender, Double salary) throws WrongArgumentException {
         //Check, if TreeSet contains a person with same id
+        try{
+            if(year<1900||month>11||day>30)throw new WrongArgumentException("Failed to create an employee: incorrect date");
         Iterator itr = employeeList.iterator();
         while(itr.hasNext()){
             Employee emp =(Employee)itr.next(); 
@@ -62,7 +67,10 @@ public class Company {
         
         
             
-        return true;        
+        return true;
+        }catch (WrongArgumentException wae){
+            throw new WrongArgumentException(wae.getMessage());
+        }
     }
 
     /**
@@ -78,13 +86,14 @@ public class Company {
      * @return
      */
     public boolean addHourlyWageEmployee(Integer id, String name,
-            String surname, Integer year, Integer month, Integer day, Gender gender, Double hourlywage){
-
+            String surname, Integer year, Integer month, Integer day, Gender gender, Double hourlywage) throws WrongArgumentException {
+        try{
+            if(year<1900||month>11||day>30)throw new WrongArgumentException("Failed to create an employee: incorrect date");
         Iterator itr = employeeList.iterator();
         while(itr.hasNext()){
             Employee emp =(Employee)itr.next(); 
             if (emp.getId() == id){
-                
+                System.out.println("Failed to create an employee: incorrect date");
                 return false;
                 
             }
@@ -105,6 +114,11 @@ public class Company {
         
             
         return true;
+        }catch (WrongArgumentException wde){
+
+            throw new WrongArgumentException("Failed to create an employee: incorrect date");
+        }
+
     }
 
     /**
@@ -234,9 +248,11 @@ public class Company {
             case "salary":
                 Collections.sort((List)employeeList, new CompareSalary());
                 return true;
+            case "date":
+                Collections.sort((List)employeeList, new CompareDate());
+                return true;
             default:
                 return false;
-
 
         }
 

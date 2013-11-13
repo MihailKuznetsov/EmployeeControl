@@ -50,7 +50,10 @@ public class EmployeeGenerator {
         return (double)(n.nextInt(100));
     }
 
-    public boolean fillEmployeeList(Integer empNum, Company company){
+    public boolean fillEmployeeList(Integer empNum, Company company)throws WrongArgumentException{
+        try{
+            if(empNum<1)throw new WrongArgumentException("Failed to generate employees: number of employees must be above 0.");
+
         Integer id=1;
         int randGender, randSalaryType;
         for(Integer i = 1;i<=empNum;i++){
@@ -71,5 +74,8 @@ public class EmployeeGenerator {
                 }
         }
         return true;
+        }catch(WrongArgumentException wae){
+        throw new WrongArgumentException(wae.getMessage());
+        }
     }
 }
